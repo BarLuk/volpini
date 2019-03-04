@@ -51,36 +51,25 @@ function findOverlap(arr1, arr2) {
     }
 
 }
-// Not working at the moment - cannot find error... :(
+
 function calculateOverlap(prof1, prof2, shift1, shift2) {
     p1 = prof1.slice();
     p2 = prof2.slice();
     var newProf1 = [];
     var newProf2 = [];
     j=0;
-    // console.log(p1.length, p2.length, Math.min(p1.length, p2.length));
-    loopLength = Math.min(p1.length, p2.length) - (shift1-shift2 > 0 ? shift1-shift2 : 0);
-    console.log(loopLength);
+    loopLength = p1.length;
     for (var i=0; i<loopLength; i++) {
-        console.log("i: ",i)
-        console.log("j: ",j)
-        console.log("1: ",p1[i])
-        console.log("2: ",p2[j])
-        while(p1[i].x > p2[j].x) {
-            // console.log("1 > 2: ", p1[i].x, p2[0].x, i);
+        while((p1[i].x > p2[j].x) && (j < p2.length-1)) {
             j+=1;
         }
-        while(p1[i].x < p2[j].x) {
-            // console.log("1 < 2: ", p1[i].x, p2[0].x, i);
+        while((p1[i].x < p2[j].x) && (i<p1.length-1)) {
             i++;
         }
-        // console.log("1 == 2: ", p1[i].x, p2[0].x, i);
         if (p1[i].y && p2[j].y) {
-            // console.log("y1 && y2: ", p1[i].x, p2[0].x, i);
             newProf1.push(p1[i]);
             newProf2.push(p2[j]);
         }
-        // console.log(i);
     }
 
     return {p1: newProf1, p2: newProf2}

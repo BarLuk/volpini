@@ -73,10 +73,31 @@ function extractGaps(seq, wndw) {
 
     return {gap: gaps, seq: gaplessSeq};
 }
+function extractGapsCodon(seq, wndw) {
+    var gaps = [];
+    var gaplessSeq = "";
+
+    for (var i = 0, len = seq.length; i < len-3; i+=3) {
+        if (seq.slice(i,i+3) == "---") {
+            if (i/3 >= (wndw-1)/2) {
+                gaps.push(i/3-(wndw-1)/2);
+            }
+        } else {
+            gaplessSeq += seq.slice(i,i+3);
+        }
+    }
+
+    return {gap: gaps, seq: gaplessSeq};
+}
 function profile_calculation(seq, wndw, scaleID, type, shift, method) {
     var seqArray = [];
     var smoothArray = [];
-    var noGaps = extractGaps(seq, wndw);
+    if (type == "protein") {
+        var noGaps = extractGaps(seq, wndw);
+    }
+    else if (type == "rna") {
+        var noGaps = extractGapsCodon(seq, wndw);
+    }
     var seq = noGaps.seq;
     if (scaleID == "") {
         for (var i = 0, len = seq.length; i < len; i++) {
@@ -100,7 +121,10 @@ function profile_calculation(seq, wndw, scaleID, type, shift, method) {
                     while(x<(smoothArray.length+Math.round((wndw-1)/2) ) ){x+=1;xVals.push(x+shift)};
                     break;
                 case "rna":
-                    smoothArray = windowAverage(seqArray,wndw,3)
+                    smoothArray = windowAverage(seqArray,wndw,3);
+                    for (var i = 0, len = noGaps.gap.length; i < len; i++) {
+                        smoothArray.splice(noGaps.gap[i], 0, NaN);
+                    };
                     var xVals = [((wndw-1)/2)+shift], x=(wndw-1)/2;
                     while(x<(smoothArray.length+Math.round((wndw-1)/2) ) ){x+=1;xVals.push(x+shift)};
                     break;
@@ -297,7 +321,8 @@ function drawingProfiles(data, id = ".canvas") {
 
         var rnaLine  = d3.line()
             .x(function(d) {return x1(d.x); })
-            .y(function(d) {return y2(d.y); });
+            .y(function(d) {return y2(d.y); })
+            .defined(function(d) {return !isNaN(d.y);});
 
         var gY2 = g.append("g")
                    .classed("axisBlack", true)
