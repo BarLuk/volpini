@@ -13081,6 +13081,8 @@ var scale = {'protein' : {
                     'URA-content' : {'A': 0, 'C': 0, 'G': 0, 'U': 1, 'T': 1},
                     'PUR-content' : {'A': 1, 'C': 0, 'G': 1, 'U': 0, 'T': 0},
                     'PYR-content' : {'A': 0, 'C': 1, 'G': 0, 'U': 1, 'T': 1},
+                    'GC-content' : {'A': 0, 'C': 1, 'G': 1, 'U': 0, 'T': 0},
+                    'AU-content' : {'A': 1, 'C': 0, 'G': 0, 'U': 1, 'T': 1},
                     'no scale selected' : {'A': 0, 'C': 0, 'G': 0, 'U': 0, 'T': 0},
                     'voro_interface': {'A': -0.12, 'G': 0.03, 'C': 0.22, 'U': -0.1, 'T': -0.},
                     'nuTP weigths' : {'A': 507.2, 'C': 483.2, 'G': 523.2, 'U': 484.2, 'T': 484.2},

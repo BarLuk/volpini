@@ -4844,6 +4844,22 @@ var scaleDescriptors = {
             "name": "Pyrimidine composition",
             "summary": "Base composition in respect to Pyrimidine bases"
         },
+        "GC-content" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "GC composition",
+            "summary": "Base composition in respect to Guanine and Cytosine bases"
+        },
+        "AU-content" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "AU composition",
+            "summary": "Base composition in respect to Adenine and Uracil bases"
+        },
         "nuTP weigths" : {
             "PMID": "",
             "aaIndexID": "",
