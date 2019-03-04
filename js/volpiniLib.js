@@ -424,12 +424,13 @@ function calculate_RMSD(a, b) {
 }
 
 function calculate_spearman(a, b) {
-    profile_1 = data.seq[a].profile;
-    profile_2 = data.seq[b].profile;
-    limits = findOverlap(profile_1, profile_2);
-    pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
-    return spearson.round(spearson.correlation.spearman(yVal(pSlice), yVal(rSlice), true),2).toString();
+    // profile_1 = data.seq[a].profile;
+    // profile_2 = data.seq[b].profile;
+    // limits = findOverlap(profile_1, profile_2);
+    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
+    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
+    overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
+    return spearson.round(spearson.correlation.spearman(yVal(overlap.p1), yVal(overlap.p2), true),2).toString();
 }
 
 function downloadLinkSVG(canvas) {

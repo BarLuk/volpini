@@ -13081,8 +13081,45 @@ var scale = {'protein' : {
                     'URA-content' : {'A': 0, 'C': 0, 'G': 0, 'U': 1, 'T': 1},
                     'PUR-content' : {'A': 1, 'C': 0, 'G': 1, 'U': 0, 'T': 0},
                     'PYR-content' : {'A': 0, 'C': 1, 'G': 0, 'U': 1, 'T': 1},
-                    'no scale selected' :        {'A': 0, 'C': 0, 'G': 0, 'U': 0, 'T': 0},
-                    'voro_interface': {'A': -0.12, 'G': 0.03, 'C': 0.22, 'U': -0.1, 'T': -0.}
+                    'no scale selected' : {'A': 0, 'C': 0, 'G': 0, 'U': 0, 'T': 0},
+                    'voro_interface': {'A': -0.12, 'G': 0.03, 'C': 0.22, 'U': -0.1, 'T': -0.},
+                    'nuTP weigths' : {'A': 507.2, 'C': 483.2, 'G': 523.2, 'U': 484.2, 'T': 484.2},
+                    'knoweledge-based SASA' : {'A': 294.584, 'C': 274.857, 'G': 298.555, 'U': 263.671, 'T': 263.671},
+                    'knoweledge-based contact SASA with AA' : {'A': 25.2491, 'C': 23.5899, 'G': 25.6048, 'U': 23.0871, 'T': 23.0871},
+                    'dG chx-wat Shin1998' : {'A': -2.82, 'C': -6.03, 'G': -6.67, 'U': -3.65, 'T': -3.65},
+                    'logP n-but Leo1971' : {'A': 0.33, 'C': -0.68, 'G': -0.35, 'U': -0.4, 'T': -0.4},
+                    'logP oct(calc) Leo1971' : {'A': -0.07, 'C': -1.46, 'G': -1, 'U': -1.07, 'T': -1.07},
+                    'mhp-sum' : {'A': -0.5813, 'C': -0.2326, 'G': -0.6577, 'U': 0.7066, 'T': 0.7066},
+                    'Water-affinities chloroform Cullis1981' : {'A': 0.78, 'C': 3.00, 'G': 3.52, 'U': 1.21, 'T': 1.21},
+                    'Water-affinities 2-butanol Cullis1981' : {'A': 0.79, 'C': 1.79, 'G': 1.35, 'U': 0.82, 'T': 0.82},
+                    'waterSFE AMBER Miller1996' : {'A': -11.4, 'C': -17.6, 'G': -21.9, 'U': -13.4, 'T': -13.4},
+                    'waterSFE OPLS/FEP Elcock1993' : {'A': -11.6, 'C': -20.1, 'G': -21.7, 'U': -12.8, 'T': -12.8},
+                    'waterSFE SM5.4/A Giesen1997' : {'A': -15.2, 'C': -19.9, 'G': -20.1, 'U': -10.5, 'T': -10.5},
+                    'waterSFE AM1-MST Orozco1996' : {'A': -10.8, 'C': -16.1, 'G': -21.1, 'U': -10.4, 'T': -10.4},
+                    'waterSFE 6-31G*-MST Orozco1996' : {'A': -8.5, 'C': -15.1, 'G': -18.1, 'U': -10.4, 'T': -10.4},
+                    'chloroformSFE CS1 Eksterowicz1997' : {'A': -13.9, 'C': -14.9, 'G': -19.7, 'U': -13.5, 'T': -13.5},
+                    'chloroformSFE CS2 Eksterowicz1997' : {'A': -11.8, 'C': -12.7, 'G': -16.8, 'U': -11.2, 'T': -11.2},
+                    'chloroformSFE OPLS/FEP Orozco1996' : {'A': -14.2, 'C': -15.3, 'G': -17.4, 'U': -13.0, 'T': -13.0},
+                    'chloroformSFE SM5.4/A Giesen1997' : {'A': -13.3, 'C': -15.5, 'G': -15.9, 'U': -8.9, 'T': -8.9},
+                    'chloroformSFE AM1-MST Orozco1996' : {'A': -10.4, 'C': -11.3, 'G': -14.2, 'U': -9.1, 'T': -9.1},
+                    'chloroformSFE 6-31G*-MST Orozco1996' : {'A': -10.5, 'C': -12.4, 'G': -15.4, 'U': -10.0, 'T': -10.0},
+                    'logPclrm/wat CS1 Eksterowicz1997' : {'A': 1.8, 'C': -2.0, 'G': -1.6, 'U': 0.1, 'T': 0.1},
+                    'logPclrm/wat CS2 Eksterowicz1997' : {'A': 0.3, 'C': -3.6, 'G': -3.7, 'U': -1.6, 'T': -1.6},
+                    'logPclrm/wat OPLS/FEP Orozco1996' : {'A': 1.9, 'C': -3.5, 'G': -3.2, 'U': 0.1, 'T': 0.1},
+                    'logPclrm/wat SM5.4/A Giesen1997' : {'A': -1.4, 'C': -3.2, 'G': -3.1, 'U': -1.2, 'T': -1.2},
+                    'logPclrm/wat AMl-MST Orozco1996' : {'A': -0.3, 'C': -3.5, 'G': -5.1, 'U': -1.0, 'T': -1.0},
+                    'logPclrm/wat 6-31G*-MST Orozco1996' : {'A': 1.5, 'C': -2.0, 'G': -2.0, 'U': -0.7, 'T': -0.7},
+                    'sasa absolute nmrset' : {'A': 40.888, 'C': 35.001, 'G': 45.936, 'U': 37.243, 'T': 37.243},
+                    'sasa exposed nmrset' : {'A': 0.246, 'C': 0.213, 'G': 0.266, 'U': 0.266, 'T': 0.266},
+                    'AA binding efficiency 1+' : {'A': -0.070249, 'C': 0.132942, 'G': 0.0911237, 'U': -0.117388, 'T': -0.117388},
+                    'AA binding efficiency 2+' : {'A': -0.0341748, 'C': 0.028469, 'G': 0.0536762, 'U': -0.0506315, 'T': -0.0506315},
+                    'AA binding efficiency 2' : {'A': -0.0288226, 'C': 0.0281679, 'G': 0.0754049, 'U': -0.0747245, 'T': -0.0747245},
+                    'fraction of contacts on the protein-RNA interface Hoffman2004' : {'A': 0.222, 'C': 0.285, 'G': 0.315, 'U': 0.178, 'T': 0.178},
+                    'fraction of contacts (arcsin(p^-2))on the protein-RNA interface Treger2001' : {'A': 0.23, 'C': 0.19, 'G': 0.26, 'U': 0.24, 'T': 0.24},
+                    'fraction of contacts base-sidechain on the protein-RNA interface Gupta2011' : {'A': 0.196, 'C': 0.176, 'G': 0.393, 'U': 0.235, 'T': 0.235},
+                    'log-odds preference of unpaired conformations for RNP vs nonRNP Gupta2011' : {'A': 0.5824, 'C': 0.5870, 'G': 0.3324, 'U': 1.0314, 'T': 1.0314},
+                    'fraction of unpaired residues Kirillova2011' : {'A': 0.486, 'C': 0.201, 'G': 0.231, 'U': 0.3887, 'T': 0.3887},
+                    'Rf valuse dinucleoside monophosphate Weber1978' : {'A': 0.023, 'C': 0.349, 'G': 0.065, 'U': 0.389, 'T': 0.389}
                 }
             }
 
@@ -13146,7 +13183,7 @@ var classification = {
     'p_hydro'  : ['ARGP820101','ARGP820102','ARGP820103','BEGF750102','BHAR880101','BIOV880101','BIOV880102','BROC820101','BROC820102','BULH740101','CHAM820102','CHOC760102','CHOC760103','CHOC760104','CHOP780204','CIDH920101','CIDH920102','CIDH920103','CIDH920104','CIDH920105','DESM900101','DESM900102','EISD840101','EISD860101','EISD860102','EISD860103','FASG760102','FASG760105','FAUJ830101','FAUJ880108','FAUJ880109','FAUJ880110','FAUJ880111','FAUJ880112','FINA910101','FINA910103','FINA910104','GOLD730101','GRAR740101','GRAR740102','GUYH850101','HOPA770101','HOPT810101','ISOY800107','JANJ780101','JANJ780102','JANJ780103','JANJ790101','JANJ790102','JOND750101','JOND750102','KARP850101','KARP850102','KHAG800101','KLEP840101','KRIW790101','KRIW790102','KRIW710101','KYTJ820101','LAWE840101','LEVM760101','MANP780101','MEEJ800101','MEEJ800102','MEEJ810101','MEEJ810102','MEIH800101','MEIH800102','MEIH800103','MIYS850101','NAKH900104','NAKH900106','NAKH900108','NAKH900110','NAKH900113','NISK800101','NISK860101','NOZY710101','OOBM770101','OOBM770103','OOBM850103','OOBM850105','PALJ810111','PARJ860101','PLIV810101','PONP800101','PONP800102','PONP800103','PONP800104','PONP800105','PONP800106','PONP800107','PONP800108','PRAM820101','PRAM900101','QIAN880114','QIAN880115','QIAN880116','QIAN880126','QIAN880127','QIAN880128','RACS820101','RACS820103','RACS770101','RACS770102','RACS770103','RADA880101','RADA880102','RADA880104','RADA880105','RADA880107','RADA880108','RICJ880104','RICJ880105','RICJ880106','RICJ880108','RICJ880111','ROBB760102','ROBB790101','ROSG850102','ROSM880101','ROSM880102','ROSM880103','SIMZ760101','SNEP660102','SUEM840102','SWER830101','TANS770106','TANS770108','VASM830102','VASM830103','VELV850101','VENT840101','VHEG790101','WARP780101','WERD780101','WERD780103','WERD780104','WOEC730101','WOLR810101','WOLS870101','YUTK870101','YUTK870102','YUTK870103','YUTK870104','ZIMJ680101','ZIMJ680103','ZIMJ680104','ZIMJ680105','AURR980104','AURR980105','AURR980106','AURR980107','AVBF000106','AVBF000109','BAEK050101','BASU050101','BASU050102','BASU050103','BLAS910101','CASG920101','CORJ870101','CORJ870102','CORJ870103','CORJ870104','CORJ870107','COSI940101','COWR900101','ENGD860101','FAC1','FASG890101','FUKS010101','FUKS010102','FUKS010103','FUKS010104','GEOR030103','GEOR030105','GEOR030107','GUOD860101','GUYH850102','GUYH850103','GUYH850104','GUYH850105','JACR890101','JURD980101','KIDA850101','KOEP990102','KUHL950101','MIYS990101','MIYS990102','MIYS990103','MIYS990104','MIYS990105','MONM990101','MONM990201','NADH010101','NADH010102','NADH010103','NADH010104','NADH010105','NADH010106','OLSK800101','ONEK900102','PARS000101','PONP930101','PUNT030101','PUNT030102','ROSM880104','ROSM880105','set2pU','TAKK010101','VINM940101','VINM940102','VINM940103','VINM940104','WILM950101','WILM950102','WILM950103','WILM950104','WIMW960101','WOLR790101','YANJ020101','ZHOH040101','ZHOH040102','ZHOH040103'],
     'p_pchem' : ['ANDN920101','BIGC670101','BULH740102','BUNA790102','CHAM830103','CHAM830105','CHAM830106','CHAM820101','CHOC750101','CHOC760101','COHE430101','DAWD720101','DAYM780201','FASG760101','FAUJ880101','FAUJ880103','FAUJ880104','FAUJ880105','FAUJ880106','GARJ730101','GOLD730102','GRAR740103','HUTJ700102','HUTJ700103','JOND920102','KRIW790103','LEVM760102','LEVM760105','LEVM760106','LEVM760107','MCMT640101','OOBM770102','OOBM770104','OOBM770105','OOBM850102','QIAN880123','QIAN880124','QIAN880125','RADA880103','RADA880106','ROSG850101','SNEP660103','WEBA780101','WOLS870102','ZASB820101','ZIMJ680102','FAC5','HARY940101','KARS160101','KARS160102','KARS160103','KARS160104','KARS160105','KARS160106','KARS160107','KARS160108','KARS160109','KARS160110','KARS160111','KARS160112','KARS160113','KARS160114','KARS160115','KARS160116','KARS160117','KARS160120','KARS160122','MITS020101','PONJ960101','SUYM030101','TSAJ990101','TSAJ990102'],
     'p_other' : ['CHAM810101','CHAM830104','CHOP780206','CHOP780214','FAUJ880102','FAUJ880107','ISOY800105','ISOY800108','LEVM760103','LEVM760104','MAXF760103','MAXF760104','MAXF760105','PRAM820102','PRAM820103','RACS820102','RACS820106','RACS820107','RACS820109','RACS820113','RICJ880101','RICJ880102','RICJ880103','RICJ880115','TANS770105','TANS770107','TANS770109','WERD780102','AURR980116','AVBF000103','AVBF000104','AVBF000107','GEOR030108','KARS160119','NADH010107','ONEK900101','set2pA'],
-    'r_comp' : ['ADE-content','CYT-content','GUA-content','URA-content','PUR-content','PYR-content']
+    'r_comp' : ['ADE-content','CYT-content','GUA-content','URA-content','PUR-content','PYR-content','nuTP weigths','knoweledge-based SASA','knoweledge-based contact SASA with AA','dG chx-wat Shin1998','logP n-but Leo1971','logP oct(calc) Leo1971','mhp-sum','Water-affinities chloroform Cullis1981','Water-affinities 2-butanol Cullis1981','waterSFE AMBER Miller1996','waterSFE OPLS/FEP Elcock1993','waterSFE SM5.4/A Giesen1997','waterSFE AM1-MST Orozco1996','waterSFE 6-31G*-MST Orozco1996','chloroformSFE CS1 Eksterowicz1997','chloroformSFE CS2 Eksterowicz1997','chloroformSFE OPLS/FEP Orozco1996','chloroformSFE SM5.4/A Giesen1997','chloroformSFE AM1-MST Orozco1996','chloroformSFE 6-31G*-MST Orozco1996','logPclrm/wat CS1 Eksterowicz1997','logPclrm/wat CS2 Eksterowicz1997','logPclrm/wat OPLS/FEP Orozco1996','logPclrm/wat SM5.4/A Giesen1997','logPclrm/wat AMl-MST Orozco1996','logPclrm/wat 6-31G*-MST Orozco1996','sasa absolute nmrset','sasa exposed nmrset','AA binding efficiency 1+','AA binding efficiency 2+','AA binding efficiency 2','fraction of contacts on the protein-RNA interface Hoffman2004','fraction of contacts (arcsin(p^-2))on the protein-RNA interface Treger2001','fraction of contacts base-sidechain on the protein-RNA interface Gupta2011','log-odds preference of unpaired conformations for RNP vs nonRNP Gupta2011','fraction of unpaired residues Kirillova2011','Rf valuse dinucleoside monophosphate Weber1978']
 }
 
 Object.keys(classification).forEach(function(key) {

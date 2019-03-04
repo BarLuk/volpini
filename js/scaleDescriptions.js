@@ -4844,5 +4844,301 @@ var scaleDescriptors = {
             "name": "Pyrimidine composition",
             "summary": "Base composition in respect to Pyrimidine bases"
         },
+        "nuTP weigths" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "knoweledge-based SASA" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "knoweledge-based contact SASA with AA" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "dG chx-wat Shin1998" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logP n-but Leo1971" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logP oct(calc) Leo1971" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "mhp-sum" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "Water-affinities chloroform Cullis1981" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "Water-affinities 2-butanol Cullis1981" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "waterSFE AMBER Miller1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "waterSFE OPLS/FEP Elcock1993" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "waterSFE SM5.4/A Giesen1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "waterSFE AM1-MST Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "waterSFE 6-31G*-MST Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "chloroformSFE CS1 Eksterowicz1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "chloroformSFE CS2 Eksterowicz1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "chloroformSFE OPLS/FEP Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "chloroformSFE SM5.4/A Giesen1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "chloroformSFE AM1-MST Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "chloroformSFE 6-31G*-MST Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logPclrm/wat CS1 Eksterowicz1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logPclrm/wat CS2 Eksterowicz1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logPclrm/wat OPLS/FEP Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logPclrm/wat SM5.4/A Giesen1997" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logPclrm/wat AMl-MST Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "logPclrm/wat 6-31G*-MST Orozco1996" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "sasa absolute nmrset" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "sasa exposed nmrset" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "AA binding efficiency 1+" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "AA binding efficiency 2+" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "AA binding efficiency 2" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "fraction of contacts on the protein-RNA interface Hoffman2004" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "fraction of contacts (arcsin(p^-2))on the protein-RNA interface Treger2001" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "fraction of contacts base-sidechain on the protein-RNA interface Gupta2011" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "log-odds preference of unpaired conformations for RNP vs nonRNP Gupta2011" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "fraction of unpaired residues Kirillova2011" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        },
+        "Rf valuse dinucleoside monophosphate Weber1978" : {
+            "PMID": "",
+            "aaIndexID": "",
+            "author": "",
+            "journal": "",
+            "name": "",
+            "summary": ""
+        }
     }
 }
