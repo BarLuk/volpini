@@ -406,21 +406,23 @@ function calculate_pearson(a, b) {
 }
 
 function calculate_determination(a, b) {
-    profile_1 = data.seq[a].profile;
-    profile_2 = data.seq[b].profile;
-    limits = findOverlap(profile_1, profile_2);
-    pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
-    return spearson.round(Math.pow(spearson.correlation.pearson(yVal(pSlice), yVal(rSlice), true),2),2).toString();
+    // profile_1 = data.seq[a].profile;
+    // profile_2 = data.seq[b].profile;
+    // limits = findOverlap(profile_1, profile_2);
+    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
+    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
+    overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
+    return spearson.round(Math.pow(spearson.correlation.pearson(yVal(overlap.p1), yVal(overlap.p2), true),2),2).toString();
 }
 
 function calculate_RMSD(a, b) {
-    profile_1 = data.seq[a].profile;
-    profile_2 = data.seq[b].profile;
-    limits = findOverlap(profile_1, profile_2);
-    pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
-    return spearson.round(RMSD(yVal(pSlice), yVal(rSlice)),2).toString();
+    // profile_1 = data.seq[a].profile;
+    // profile_2 = data.seq[b].profile;
+    // limits = findOverlap(profile_1, profile_2);
+    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
+    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
+    overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
+    return spearson.round(RMSD(yVal(overlap.p1), yVal(overlap.p2)),2).toString();
 }
 
 function calculate_spearman(a, b) {
