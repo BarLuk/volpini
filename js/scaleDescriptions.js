@@ -4865,24 +4865,24 @@ var scaleDescriptors = {
             "aaIndexID": "",
             "author": "",
             "journal": "",
-            "name": "",
-            "summary": ""
+            "name": "Nucleoside triphosphate weights",
+            "summary": "Molecular weight of the respective nucleoside triphosphate"
         },
         "knoweledge-based SASA" : {
             "PMID": "",
             "aaIndexID": "",
             "author": "",
             "journal": "",
-            "name": "",
-            "summary": ""
+            "name": "Average SASA based on crystal structure",
+            "summary": "Average solvent accessible surface area found in crystal structures"
         },
         "knoweledge-based contact SASA with AA" : {
             "PMID": "",
             "aaIndexID": "",
             "author": "",
             "journal": "",
-            "name": "",
-            "summary": ""
+            "name": "Average SASA in contact with AA",
+            "summary": "Average solvent accessible surface area in contact with amino acids found in crystal structures"
         },
         "dG chx-wat Shin1998" : {
             "PMID": "",
@@ -5073,40 +5073,40 @@ var scaleDescriptors = {
             "aaIndexID": "",
             "author": "",
             "journal": "",
-            "name": "",
-            "summary": ""
+            "name": "Average SASA based on NMR structure",
+            "summary": "Average solvent accessible surface area found in NMR structures"
         },
         "sasa exposed nmrset" : {
             "PMID": "",
             "aaIndexID": "",
             "author": "",
             "journal": "",
-            "name": "",
-            "summary": ""
+            "name": "Exposed SASA based on NMR structure",
+            "summary": "Average ratio of exposed solvent accessible surface area found in NMR structures"
         },
         "AA binding efficiency 1+" : {
-            "PMID": "",
+            "PMID": "23868089",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
-            "summary": ""
+            "author": "Polyansky A.A., Zagrovic B.",
+            "journal": "Nucleic Acids Res. 2013 Oct;41(18):8434-43",
+            "name": "Affinity for amino acids (1+)",
+            "summary": "Affinity for purine nucleobases derived from crystal structures 1+ set (one or more amino acids in contact)"
         },
         "AA binding efficiency 2+" : {
-            "PMID": "",
+            "PMID": "23868089",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
-            "summary": ""
+            "author": "Polyansky A.A., Zagrovic B.",
+            "journal": "Nucleic Acids Res. 2013 Oct;41(18):8434-43",
+            "name": "Affinity for amino acids (2+)",
+            "summary": "Affinity for purine nucleobases derived from crystal structures 2+ set (two or more amino acids in contact)"
         },
         "AA binding efficiency 2" : {
-            "PMID": "",
+            "PMID": "23868089",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
-            "summary": ""
+            "author": "Polyansky A.A., Zagrovic B.",
+            "journal": "Nucleic Acids Res. 2013 Oct;41(18):8434-43",
+            "name": "Affinity for amino acids (2)",
+            "summary": "Affinity for purine nucleobases derived from crystal structures 1 set (exactly two amino acids in contact)"
         },
         "fraction of contacts on the protein-RNA interface Hoffman2004" : {
             "PMID": "",
