@@ -470,7 +470,19 @@ fieldset[disabled] .btn-red.active {
 
 .tooltip .arrow::before {
 	border-right-color: rgb(223, 223, 223);
-  }
+}
+
+.tooltip.warning .tooltip-inner          { background-color:    #ec971f; }
+.tooltip.warning.top > .tooltip-arrow    { border-top-color:    #ec971f; }
+.tooltip.warning.right > .tooltip-arrow  { border-right-color:  #ec971f; }
+.tooltip.warning.bottom > .tooltip-arrow { border-bottom-color: #ec971f; }
+.tooltip.warning.left > .tooltip-arrow   { border-left-color:   #ec971f; }
+
+.tooltip.danger .tooltip-inner          { background-color:    #d9534f; }
+.tooltip.danger.top > .tooltip-arrow    { border-top-color:    #d9534f; }
+.tooltip.danger.right > .tooltip-arrow  { border-right-color:  #d9534f; }
+.tooltip.danger.bottom > .tooltip-arrow { border-bottom-color: #d9534f; }
+.tooltip.danger.left > .tooltip-arrow   { border-left-color:   #d9534f; }
 
 #specific_selector {
 	width: 200px;

@@ -426,6 +426,20 @@ function drawingProfiles(data, id = ".canvas") {
     return "complete";   
 };
 
+var closeModal = function() {
+    var that = $(this)
+    if ((data.seq[this.id].scale != "no scale selected") && (data.seq[this.id].scale) && (data.seq[this.id].sequence != "")) {
+        $('#setup' + this.id).modal('hide');
+    }
+    else {
+        that.tooltip('show');
+        setTimeout(function(){
+            that.tooltip('hide')
+        }, 2000);
+    }
+    
+}
+
 const Item = ({number}) =>`
 <div class="sequence">
     <div class="title_bar">
@@ -442,7 +456,7 @@ const Item = ({number}) =>`
                 <div class="modal-content">
                     <div class="modal-header">
                         <h4 class="modal-title">Options</h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" id="${number}" data-dismiss="modal">&times;</button>
                     </div>
                     <div class="modal-body">
                         <ul class="nav nav-tabs" role="tablist">
@@ -495,7 +509,7 @@ const Item = ({number}) =>`
                                         
                                     </div>
                                     <button type="button" class="btn btn-sm btn-red btn-clr btn-flat" id="${number}">Clear</button>
-                                    <button type="button" class="btn btn-sm btn-grey btn-flat" id="${number}" data-dismiss="modal">Done</button>
+                                    <button type="button" class="btn btn-sm btn-grey btn-flat" id="${number}" data-toggle="tooltip" data-placement="right" title="Please select a scale and a sequence before continuing" data-trigger="manual" onclick="closeModal.call(this)">Done</button>
                                     
                                 </div>
                                 <div class="modal-footer">
@@ -526,7 +540,7 @@ const Item = ({number}) =>`
                                     </div>
                                 </div><br>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-sm btn-grey btn-flat" id="${number}" data-dismiss="modal">Done</button>
+                                    <button type="button" class="btn btn-sm btn-grey btn-flat" id="${number}" data-toggle="tooltip" data-placement="right" title="Please select a scale and a sequence before continuing" data-trigger="manual" onclick="closeModal.call(this)">Done</button>
                                 </div>
                             </div>
 
@@ -557,7 +571,7 @@ const Item = ({number}) =>`
                                     </div>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-sm btn-grey btn-flat" id="${number}" data-dismiss="modal">Done</button>
+                                    <button type="button" class="btn btn-sm btn-grey btn-flat" id="${number}" data-toggle="tooltip" data-placement="right" title="Please select a scale and a sequence before continuing" data-trigger="manual" onclick="closeModal.call(this)">Done</button>
                                 </div>
                             </div>
                         </div>
