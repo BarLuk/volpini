@@ -19,8 +19,7 @@ function yVal(arr) {
 }
 
 function findOverlap(arr1, arr2) {
-    // arr1 prot
-    // arr2 rna
+// not used anymore - replaced by calculateOverlap(prof1, prof2, shift1, shift2) for compatibility with gaps
     if (arr1.length >= 1 && arr2.length >= 1) {
         if (arr1[0].x < arr2[0].x) {
             r_min = 0;
@@ -75,7 +74,7 @@ function calculateOverlap(prof1, prof2, shift1, shift2) {
     return {p1: newProf1, p2: newProf2}
 }
 
-function windowAverage(arr, win, step) { // returns window avaraged list
+function windowAverage(arr, win, step) {
     var output = []
     win = win*step;
     if (arr.length >= win) {
@@ -391,46 +390,24 @@ function getRandomColorHSL(H = null, S = null, L = null, noise = null) {
     }
 
     return hslToRgb(H,S,L);
-
-    // return hsl(' + H + ', ' + S + '%, ' + L + '%)';
 }
 
 function calculate_pearson(a, b) {
-    // profile_1 = data.seq[a].profile;
-    // profile_2 = data.seq[b].profile;
-    // limits = findOverlap(profile_1, profile_2);
-    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
     overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
     return spearson.round(spearson.correlation.pearson(yVal(overlap.p1), yVal(overlap.p2), true),2).toString();
 }
 
 function calculate_determination(a, b) {
-    // profile_1 = data.seq[a].profile;
-    // profile_2 = data.seq[b].profile;
-    // limits = findOverlap(profile_1, profile_2);
-    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
     overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
     return spearson.round(Math.pow(spearson.correlation.pearson(yVal(overlap.p1), yVal(overlap.p2), true),2),2).toString();
 }
 
 function calculate_RMSD(a, b) {
-    // profile_1 = data.seq[a].profile;
-    // profile_2 = data.seq[b].profile;
-    // limits = findOverlap(profile_1, profile_2);
-    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
     overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
     return spearson.round(RMSD(yVal(overlap.p1), yVal(overlap.p2)),2).toString();
 }
 
 function calculate_spearman(a, b) {
-    // profile_1 = data.seq[a].profile;
-    // profile_2 = data.seq[b].profile;
-    // limits = findOverlap(profile_1, profile_2);
-    // pSlice = data.seq[a].profile.slice(limits[0], limits[1]);
-    // rSlice = data.seq[b].profile.slice(limits[2], limits[3]);
     overlap = calculateOverlap(data.seq[a].profile, data.seq[b].profile, data.seq[a].shift, data.seq[b].shift);
     return spearson.round(spearson.correlation.spearman(yVal(overlap.p1), yVal(overlap.p2), true),2).toString();
 }
@@ -497,7 +474,6 @@ function assertCorrect(d) {
         for (i in d.seq) {
             for (key in listOfKeys) {
                 if (!d.seq[i].hasOwnProperty(listOfKeys[key])) {
-                    // console.log(i, d.seq[i], key, listOfKeys[key]);
                     return false;
                 }
             }
@@ -505,7 +481,6 @@ function assertCorrect(d) {
         return true;
     }
     else {
-        // console.log(d);
         return false;
     }
 }

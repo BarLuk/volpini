@@ -7,12 +7,6 @@ function updateCorResults(corList) {
 }
 
 function findBestShift(id1, id2, inv=false) {
-    // f1 = 1;
-    // f2 = 1;
-    // if (data.seq[id1].type == "rna") {f1 = 3};
-    // if (data.seq[id2].type == "rna") {f2 = 3};
-    // realLength1 = data.seq[id1].profile.length + data.seq[id1].window/f1 - 1;
-    // realLength2 = data.seq[id2].profile.length + data.seq[id2].window/f2 - 1;
     realLength1 = data.seq[id1].profile.length + data.seq[id1].window - 1;
     realLength2 = data.seq[id2].profile.length + data.seq[id2].window - 1;
     data.seq[id1].shift = 0;
@@ -31,7 +25,6 @@ function findBestShift(id1, id2, inv=false) {
         else { data.seq[id2].shift = correlations.indexOf(d3.max(correlations)); }
         drawingProfiles(data);
         updateShifts(data);
-        // 1 is longer than 2 => slide 2
     }
     else if (realLength1 < realLength2) {
         correlations = []
@@ -45,7 +38,6 @@ function findBestShift(id1, id2, inv=false) {
         else { data.seq[id1].shift = correlations.indexOf(d3.max(correlations)); }        
         drawingProfiles(data);
         updateShifts(data);
-        // 2 is longer than 1 = > slide 1
     }
     else {
         console.log("No shift possible due to same length")
@@ -170,7 +162,6 @@ function drawingProfiles(data, id = ".canvas") {
     d3.selectAll("#SVGholder > div").remove();
     var tooltip = d3.select('#SVGholder').append('div')
         .attr('class', 'SVGhidden SVGtooltip');
-    // d3.select(".canvas_g").remove();
     var svg = d3.select(id),
         margin = {top: 30, right: 70, bottom: 40, left: 70},
         width = +svg.attr("width") - margin.left - margin.right,
@@ -354,24 +345,18 @@ function drawingProfiles(data, id = ".canvas") {
 
     function zoomed() {
         var xz = d3.event.transform.rescaleX(x1);
-        // var xy1 = d3.event.transform.rescaleY(y1);
-        // var xy2 = d3.event.transform.rescaleY(y2);
 
         gX1.call(xAxis.scale(xz));
-        // gY1.call(yAxis1.scale(xy1));
-        // gY2.call(yAxis2.scale(xy2));
+
         if (input.seq.map(function(d) {return d["type"]}).includes("rna")) {
             rnaLine
                 .x(function(d) {return xz(d.x); })
-                // .y(function(d) {return xy2(d.y); })
         }
         if (input.seq.map(function(d) {return d["type"]}).includes("protein")) {
             protLine
                 .x(function(d) {return xz(d.x); })
-                // .y(function(d) {return xy1(d.y); })
         }
         d3.selectAll(".protein").attr("d", protLine)
-        // pL.attr("d", protLine)
         d3.selectAll(".rna").attr("d", rnaLine)
 
     }
@@ -438,11 +423,7 @@ function drawingProfiles(data, id = ".canvas") {
     if (document.getElementsByClassName('.correlation-data')) {
         addTable('.correlation-data', data);
     }
-    // addInterface(data);
-
-    return "complete";
-
-    
+    return "complete";   
 };
 
 const Item = ({number}) =>`
@@ -791,10 +772,6 @@ function addInterface() {
         drawingProfiles(data);
     });
 
-    
-    // drawingProfiles(data);
-    // updateShifts(data);
-    // updateInterface(data);
     addLegend(num);
 }
 
@@ -963,66 +940,8 @@ function addInterfaceBasedOnData(data) {
     drawingProfiles(data);
     updateShifts(data);
     updateWindows(data);
-    // updateInterface(data);
 
 }
-
-// function updateInterface(data) {
-//     $(".scale-selector").empty();
-//     for (var i = data.seq.length - 1; i >= 0; i--) {
-//         if (data.seq[i].active) {
-//             if (data.seq[i].type.toLowerCase() == 'rna') {
-//                 $("#"+ i +".firstRow-text").text("Window: " + 3 * Number($("#" + i + ".interfacebox .firstRow-slider .slider").text()));
-//                 data.seq[i].window = 3 * Number($("#" + i + ".interfacebox .firstRow-slider .slider").text());
-//                 $("#"+i+".scale-selector").append(`<a class="dropdown-item" id="ADE">ADE-content</a>
-//                                                 <a class="dropdown-item" id="CYT">CYT-content</a>
-//                                                 <a class="dropdown-item" id="GUA">GUA-content</a>
-//                                                 <a class="dropdown-item" id="URA">URA-content</a>
-//                                                 <a class="dropdown-item" id="PUR">PUR-content</a>
-//                                                 <a class="dropdown-item" id="PYR">PYR-content</a>`);
-//                                                 // <a class="dropdown-item" id="voro_interface">Protein Interface (Voro2018)</a>`)
-//                 if  (!['ADE', 'CYT', 'GUA', 'URA', 'PUR', 'PYR'].includes(data.seq[i].scale)) {
-//                     data.seq[i].scale = "";
-//                 }
-//             } else if (data.seq[i].type.toLowerCase() == 'protein') {
-//                 $("#"+ i +".firstRow-text").text("Window: " + Number($("#" + i + ".interfacebox .firstRow-slider .slider").text()));
-//                 data.seq[i].window = Number($("#" + i + ".interfacebox .firstRow-slider .slider").text());
-//                 $("#"+i+".scale-selector").append(`<a class="dropdown-item" id="ADE">ADE-affinity (NAR2013)</a>
-//                                                 <a class="dropdown-item" id="CYT">CYT-affinity (NAR2013)</a>
-//                                                 <a class="dropdown-item" id="GUA">GUA-affinity (NAR2013)</a>
-//                                                 <a class="dropdown-item" id="URA">URA-affinity (NAR2013)</a>
-//                                                 <a class="dropdown-item" id="PUR">PUR-affinity (NAR2013)</a>
-//                                                 <a class="dropdown-item" id="FAC1">Hydrophobicity (Factor 1)</a>
-//                                                 <a class="dropdown-item" id="Charge">Charge</a>
-//                                                 <a class="dropdown-item" id="PR">Polar Requirement (Woese 1973)</a>
-//                                                 <a class="dropdown-item" id="PR_2008">Polar Requirement (Mathew 2008)</a>`)
-//                                                 // <a class="dropdown-item" id="voro003_ADE">ADE-affinity (Voro2018)</a>
-//                                                 // <a class="dropdown-item" id="voro003_CYT">CYT-affinity (Voro2018)</a>
-//                                                 // <a class="dropdown-item" id="voro003_GUA">GUA-affinity (Voro2018)</a>
-//                                                 // <a class="dropdown-item" id="voro003_URA">URA-affinity (Voro2018)</a>
-//                                                 // <a class="dropdown-item" id="voro003_RNAgeneral">RNA Interface (Voro2018)</a>
-                                                
-//                 if (!['ADE', 'CYT', 'GUA', 'URA', 'PUR', 'FAC1', 'Charge', 'PR'].includes(data.seq[i].scale)) {
-//                     data.seq[i].scale = "";
-//                 }
-//             } else {
-//                 console.error("TYPE ERROR: data.seq["+i+"].type = " + data.seq[i].type)
-//             }
-//             updateCorrList(data);
-
-//             if (data.seq[i].scale) {
-//                 $("#" + i + ".btn-scale").html(trimString(scaleNames[data.seq[i].type][data.seq[i].scale], 9)); 
-//             }
-//             else {
-//                 $("#" + i + ".btn-scale").html(trimString("No Scale", 9));
-//             }
-//             $("#" + i + ".btn-type").html(trimString(typeNames[data.seq[i].type], 9));
-
-//             updateLegend(i);
-
-//         }
-//     }
-// }
 
 function updateCorrList(data) {
     $(".corr-selector").empty();
@@ -1039,7 +958,6 @@ function updateShifts(data) {
         if (data.seq[i].active) {
             $("#"+i+".shift").data('slider').setValue(data.seq[i].shift);
             $("#"+i+".thirdRow-text").text("Shift: " + data.seq[i].shift);
-
         }
     }
 }
@@ -1098,7 +1016,6 @@ function download_data_Uniprot(id) {
                     $("#"+id+".selectpicker").selectpicker('refresh')
 
                     drawingProfiles(data);
-                    // updateInterface(data);
                     updateShifts(data);
                 }
                 else {
@@ -1143,7 +1060,6 @@ function download_data_ENA(id) {
                     
                     data.seq[id].type = 'rna';
                     data.seq[id].window = 21;
-                    // data.seq[id].scale = 'PUR-content';
                     data.seq[id].name = addScaleToName(id,db_ID);
                     
                     $('#'+id+'.name').val(data.seq[id].name);
@@ -1154,7 +1070,6 @@ function download_data_ENA(id) {
                     $("#"+id+".selectpicker").selectpicker('refresh')
 
                     drawingProfiles(data);
-                    // updateInterface(data);
                     updateShifts(data);
                 }
                 catch(e) {
@@ -1188,7 +1103,7 @@ function removeInterfaceBox(id) {
 }
 
 function addLegend(id) {
-    /* only fire if a container has been created*/
+    /* only add legend if a container has been created */
     if (document.getElementById('legend-container')) {
         var div = document.createElement('div');
         
@@ -1354,7 +1269,6 @@ function addTable(target, data) {
                     else {
                         var th = tr.insertCell();
                         th.outerHTML = "<th>"+String(localData[i][1]+1)+"</th>";
-                        // th.appendChild(document.createTextNode(localData[i][1]+1));
                     }
                 }
             }
@@ -1363,7 +1277,6 @@ function addTable(target, data) {
                     if (j>=0) {
                         var th = tr.insertCell();
                         th.outerHTML = "<th>"+String(localData[j][1]+1)+"</th>";
-                        // th.appendChild(document.createTextNode(localData[j][1]+1));
                     }
                     else {
                         var th = tr.insertCell();
