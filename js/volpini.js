@@ -525,7 +525,7 @@ const Item = ({number}) =>`
                                         <option value="p_charge">Charge</option>
                                         <option value="p_comp">Composition</option>
                                         <option value="p_hydro">Hydrophobicity</option>
-                                        <option value="p_pchem">Physcial-Chemical</option>
+                                        <option value="p_pchem">general Physico-Chemical</option>
                                         <option value="p_rnaAf">RNA-Affinity</option>
                                         <option value="p_other">Other</option>
                                     </select>
@@ -842,7 +842,7 @@ function addInterfaceBasedOnData(data) {
                                     <option value="p_charge">Charge</option>
                                     <option value="p_comp">Composition</option>
                                     <option value="p_hydro">Hydrophobicity</option>
-                                    <option value="p_pchem">Physcial-Chemical</option>
+                                    <option value="p_pchem">general Physico-Chemical</option>
                                     <option value="p_rnaAf">RNA-Affinity</option>
                                     <option value="p_other">Other</option>
                                     `)
@@ -851,6 +851,8 @@ function addInterfaceBasedOnData(data) {
         else if (data.seq[num].type == "rna") {
             $("#"+num+".selectpicker").html(`
                                     <option value="r_comp">Composition</option>
+                                    <option value="r_energy">Energy related</option>
+                                    <option value="r_pchem">general Physico-Chemical</option>
                                     `)
             $("#"+num+".selectpicker").selectpicker('refresh')
         }
@@ -1023,7 +1025,7 @@ function download_data_Uniprot(id) {
                                         <option value="p_charge">Charge</option>
                                         <option value="p_comp">Composition</option>
                                         <option value="p_hydro">Hydrophobicity</option>
-                                        <option value="p_pchem">Physcial-Chemical</option>
+                                        <option value="p_pchem">general Physico-Chemical</option>
                                         <option value="p_rnaAf">RNA-Affinity</option>
                                         <option value="p_other">Other</option>
                                         `)
@@ -1080,6 +1082,8 @@ function download_data_ENA(id) {
 
                     $("#"+id+".selectpicker").html(`
                                         <option value="r_comp">Composition</option>
+                                        <option value="r_energy">Energy related</option>
+                                        <option value="r_pchem">general Physico-Chemical</option>
                                         `)
                     $("#"+id+".selectpicker").selectpicker('refresh')
 

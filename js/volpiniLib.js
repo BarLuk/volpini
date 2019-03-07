@@ -526,7 +526,7 @@ function createScaleList(targetID, selectedGroups, type) {
                         "p_charge": "Charge",
                         "p_comp": "Composition",
                         "p_hydro": "Hydrophobicity",
-                        "p_pchem": "Physcial-Chemical",
+                        "p_pchem": "general Physico-Chemical",
                         "p_rnaAf": "RNA-Affinity",
                         "p_other": "Other"};
 
@@ -543,7 +543,9 @@ function createScaleList(targetID, selectedGroups, type) {
         $("#"+targetID+".scaleList").html(newContent);
     }
     else if (type=="rna") {
-        longOptions = { "r_comp" : "Composition"};
+        longOptions = { "r_comp" : "Composition",
+                        "r_energy" : "Energy related",
+                        "r_pchem" : "general Physico-Chemical"};
 
         newContent = "";
         for (var j=0; j < selectedGroups.length; j++) {

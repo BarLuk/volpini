@@ -4884,188 +4884,188 @@ var scaleDescriptors = {
             "name": "Average SASA in contact with AA",
             "summary": "Average solvent accessible surface area in contact with amino acids found in crystal structures"
         },
-        "dG chx-wat Shin1998" : {
-            "PMID": "",
+        "dG chx-wat Shih1998" : {
+            "PMID": "9665846",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Shih P., Pedersen L., Gibbs P., Wolfenden R.",
+            "journal": "J Mol Biol. 280(3), 421-430 (1998)",
+            "name": "Hydrophobicities of nucleic acid bases",
             "summary": ""
         },
         "logP n-but Leo1971" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Leo A., Hansch C. and Elkins D.",
+            "journal": "Chemical reviews, 71(6), 525-616 (1971)",
+            "name": "logP n-butanol",
             "summary": ""
         },
         "logP oct(calc) Leo1971" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Leo A., Hansch C. and Elkins D.",
+            "journal": "Chemical reviews, 71(6), 525-616 (1971)",
+            "name": "logP octanol",
             "summary": ""
         },
         "mhp-sum" : {
-            "PMID": "",
+            "PMID": "17305542",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Efremov R., Chugunov A., Pyrkov T., Priestle J., Arseniev A. and Jacoby E.",
+            "journal": "Curr Med Chem 14(4), 393-415 (2007)",
+            "name": "Molecular Hydrophobicity Potential",
             "summary": ""
         },
         "Water-affinities chloroform Cullis1981" : {
-            "PMID": "",
+            "PMID": "7248264",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Cullis P. and Wolfenden R.",
+            "journal": "Biochemistry 20(11), 3024-3028 (1981)",
+            "name": "Water affinity in chloroform",
             "summary": ""
         },
         "Water-affinities 2-butanol Cullis1981" : {
-            "PMID": "",
+            "PMID": "7248264",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Cullis P. and Wolfenden R.",
+            "journal": "Biochemistry 20(11), 3024-3028 (1981)",
+            "name": "Water affinity in 2-butanol",
             "summary": ""
         },
         "waterSFE AMBER Miller1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Miller J. and Kollman P.",
+            "journal": "Journal of Physical Chemistry 100(20), 8587-8594 (1996)",
+            "name": "Solvation free energy in water (AMBER)",
             "summary": ""
         },
         "waterSFE OPLS/FEP Elcock1993" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Elcock A. and Richards W.",
+            "journal": "JACS 115(17), 7930-7931 (1993)",
+            "name": "Solvation free energy in water (OPLS/FEP)",
             "summary": ""
         },
         "waterSFE SM5.4/A Giesen1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Giesen D., Chambers C., Cramer C. and Truhlar D.",
+            "journal": "J Phys Chem B 101, 2061-2069 (1997)",
+            "name": "Solvation free energy in water (SM5.4/A)",
             "summary": ""
         },
         "waterSFE AM1-MST Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "Solvation free energy in water (AM1-MST)",
             "summary": ""
         },
         "waterSFE 6-31G*-MST Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "Solvation free energy in water (6-31G*-MST)",
             "summary": ""
         },
         "chloroformSFE CS1 Eksterowicz1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Eksterowicz J., Miller J. and Kollman P.",
+            "journal": "J Phys Chem B 101, 10971-10975 (1997)",
+            "name": "Solvation free energy in chloroform (CS1)",
             "summary": ""
         },
         "chloroformSFE CS2 Eksterowicz1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Eksterowicz J., Miller J. and Kollman P.",
+            "journal": "J Phys Chem B 101, 10971-10975 (1997)",
+            "name": "Solvation free energy in chloroform (CS2)",
             "summary": ""
         },
         "chloroformSFE OPLS/FEP Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "Solvation free energy in chloroform (OPLS/FEP)",
             "summary": ""
         },
         "chloroformSFE SM5.4/A Giesen1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Giesen D., Chambers C., Cramer C. and Truhlar D.",
+            "journal": "J Phys Chem B 1001, 2061-2069 (1997)",
+            "name": "Solvation free energy in chloroform (SM5.4/A)",
             "summary": ""
         },
         "chloroformSFE AM1-MST Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "Solvation free energy in chloroform (AM1-MST)",
             "summary": ""
         },
         "chloroformSFE 6-31G*-MST Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "Solvation free energy in chloroform (6-31G*-MST)",
             "summary": ""
         },
         "logPclrm/wat CS1 Eksterowicz1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Eksterowicz J., Miller J. and Kollman P.",
+            "journal": "J Phys Chem B 101, 10971-10975 (1997)",
+            "name": "logP chloroform/water mixture (CS1)",
             "summary": ""
         },
         "logPclrm/wat CS2 Eksterowicz1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Eksterowicz J., Miller J. and Kollman P.",
+            "journal": "J Phys Chem B 101, 10971-10975 (1997)",
+            "name": "logP chloroform/water mixture (CS2)",
             "summary": ""
         },
         "logPclrm/wat OPLS/FEP Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "logP chloroform/water mixture (OPLS/FEP)",
             "summary": ""
         },
         "logPclrm/wat SM5.4/A Giesen1997" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Giesen D., Chambers C., Cramer C. and Truhlar D.",
+            "journal": "J Phys Chem B 1001, 2061-2069 (1997)",
+            "name": "logP chloroform/water mixture (SM5.4/A)",
             "summary": ""
         },
-        "logPclrm/wat AMl-MST Orozco1996" : {
+        "logPclrm/wat AM1-MST Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "logP chloroform/water mixture (AM1-MST)",
             "summary": ""
         },
         "logPclrm/wat 6-31G*-MST Orozco1996" : {
             "PMID": "",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Orozco M., Colominas C. and Luque F.",
+            "journal": "Chem Phys 209, 19-29 (1996)",
+            "name": "logP chloroform/water mixture (6-31G*-MST)",
             "summary": ""
         },
         "sasa absolute nmrset" : {
@@ -5109,51 +5109,51 @@ var scaleDescriptors = {
             "summary": "Affinity for purine nucleobases derived from crystal structures 1 set (exactly two amino acids in contact)"
         },
         "fraction of contacts on the protein-RNA interface Hoffman2004" : {
-            "PMID": "",
+            "PMID": "14681388",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Hoffman M., Khrapov M., Cox J., Yao J., Tong L. and Ellington A.",
+            "journal": "Nucleic Acids Res 32(Database issue), D174-181 (2004)",
+            "name": "Fraction of contacts in Protein/RNA interfaces",
             "summary": ""
         },
         "fraction of contacts (arcsin(p^-2))on the protein-RNA interface Treger2001" : {
-            "PMID": "",
+            "PMID": "11500966",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Treger M. and Westhof E.",
+            "journal": "J Mol Recognit 14(4), 199-214 (2001)",
+            "name": "Fraction of contacts in Protein/RNA interfaces",
             "summary": ""
         },
         "fraction of contacts base-sidechain on the protein-RNA interface Gupta2011" : {
-            "PMID": "",
+            "PMID": "21514302",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Gupta A. and Gribskov M.",
+            "journal": "J Mol Biol 409(4), 574-587 (2011)",
+            "name": "Fraction of base-sidechain contacts in Protein/RNA interfaces",
             "summary": ""
         },
         "log-odds preference of unpaired conformations for RNP vs nonRNP Gupta2011" : {
-            "PMID": "",
+            "PMID": "21514302",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Gupta A. and Gribskov M.",
+            "journal": "J Mol Biol 409(4), 574-587 (2011)",
+            "name": "log-odds preference of unpaired conformations for RNP vs nonRNP",
             "summary": ""
         },
         "fraction of unpaired residues Kirillova2011" : {
-            "PMID": "",
+            "PMID": "22011380",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Kirillova S. and Carugo O.",
+            "journal": "BMC Struct Biol 11-41 (2011)",
+            "name": "Fraction of unpaired residues",
             "summary": ""
         },
-        "Rf valuse dinucleoside monophosphate Weber1978" : {
-            "PMID": "",
+        "Rf values dinucleoside monophosphate Weber1978" : {
+            "PMID": "691071",
             "aaIndexID": "",
-            "author": "",
-            "journal": "",
-            "name": "",
+            "author": "Weber A. and Lacey J.",
+            "journal": "J Mol Evol 11(3), 199-210 (1978)",
+            "name": "Retention factors for dinucleoside monophosphate",
             "summary": ""
         }
     }
