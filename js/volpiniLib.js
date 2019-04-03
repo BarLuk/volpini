@@ -412,22 +412,19 @@ function calculate_spearman(a, b) {
     return spearson.round(spearson.correlation.spearman(yVal(overlap.p1), yVal(overlap.p2), true),2).toString();
 }
 
-function downloadLinkSVG(canvas) {
-// try not necessary since a modern browser can be assumed...
+function downloadLinkSVG(id) {
+    // try not necessary since a modern browser can be assumed...
     try {
         var isFileSaverSupported = !!new Blob();
     } catch (e) {
         console.log("blob not supported", e)
     }
 
-    var html = d3.select(canvas)
-        .attr("title", "pro.viz.export")
-        .attr("version", 1.1)
-        .attr("xmlns", "https://www.w3.org/2000/svg")
-        .node().parentNode.innerHTML;
-    
-    var blob = new Blob([html], {type: "image/svg+xml"});
-    saveAs(blob, "myProfile.svg");
+    var svg_obj = document.getElementById(id);
+    var serializer = new XMLSerializer();
+    var svg_string = serializer.serializeToString(svg_obj);
+    var svg_blob = new Blob([svg_string], {type:"image/svg+xml;charset=utf-8"});
+    saveAs(svg_blob, "myProfile.svg");
 }
 
 function downloadLinkPNG() {
