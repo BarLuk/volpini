@@ -65,7 +65,7 @@ function calculateOverlap(prof1, prof2, shift1, shift2) {
         while((p1[i].x < p2[j].x) && (i<p1.length-1)) {
             i++;
         }
-        if (p1[i].y && p2[j].y) {
+        if ((p1[i].y && p2[j].y) && (p1[i].x == p2[j].x)) {
             newProf1.push(p1[i]);
             newProf2.push(p2[j]);
         }

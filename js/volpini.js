@@ -1262,7 +1262,7 @@ function addTable(target, data) {
                     if (j>=0) {
                         if (j<i) {
                             var td = tr.insertCell();
-                            td.appendChild(document.createTextNode(lower(localData[j][1], localData[i][1])));
+                            td.appendChild(document.createTextNode(lower(localData[i][1], localData[j][1])));
                             if (data.cor_method.lower == "rmsd"){
                                 if (data.seq[i].scale != data.seq[j].scale || data.seq[i].type != data.seq[j].type) {
                                     td.classList.add('nonsense');
